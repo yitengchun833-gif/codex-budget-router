@@ -1,0 +1,8 @@
+请使用已安装的 codex-budget-router Skill，帮我检查并应用 Codex 省额度配置。
+
+要求：
+1. 只处理 %USERPROFILE%\.codex\config.toml 和 %USERPROFILE%\.codex\AGENTS.md。
+2. 如果文件已存在，先备份。
+3. 默认模式设为 light。
+4. 不扫描项目，不读取论文，不修改论文正文。
+5. 完成后只输出修改文件、备份位置和验证结果。

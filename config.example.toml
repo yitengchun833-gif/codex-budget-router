@@ -1,0 +1,42 @@
+# Codex 省额度配置
+# 默认：轻量模型 + 低推理
+# 复杂任务：手动切换 profile
+
+model = "gpt-5.4-mini"
+model_reasoning_effort = "low"
+model_verbosity = "low"
+model_reasoning_summary = "none"
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"
+
+[profiles.light]
+model = "gpt-5.4-mini"
+model_reasoning_effort = "low"
+model_verbosity = "low"
+model_reasoning_summary = "none"
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"
+
+[profiles.normal]
+model = "gpt-5.4"
+model_reasoning_effort = "medium"
+model_verbosity = "medium"
+model_reasoning_summary = "concise"
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"
+
+[profiles.deep]
+model = "gpt-5.5"
+model_reasoning_effort = "high"
+model_verbosity = "medium"
+model_reasoning_summary = "concise"
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"
+
+[profiles.final]
+model = "gpt-5.5"
+model_reasoning_effort = "xhigh"
+model_verbosity = "medium"
+model_reasoning_summary = "concise"
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"
